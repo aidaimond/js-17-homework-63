@@ -45,7 +45,10 @@ const PostForm: React.FC<Props> = ({onSubmit, existingPost}) => {
           value={postForm.description}
         />
       </div>
-      <button type="submit" className="btn btn-primary my-4">
+      <button
+        disabled={postForm.title === '' || postForm.description === ''}
+        type="submit" className="btn btn-primary my-4"
+      >
         Save
       </button>
     </form>
