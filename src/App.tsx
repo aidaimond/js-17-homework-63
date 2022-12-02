@@ -5,6 +5,7 @@ import Contacts from "./containers/Contacts/Contacts";
 import About from "./containers/About/About";
 import Home from "./containers/Home/Home";
 import Add from "./containers/Add/Add";
+import PostAll from "./containers/PostAll/PostAll";
 
 function App() {
   return (
@@ -14,8 +15,14 @@ function App() {
       </header>
       <main className="container-fluid">
         <Routes>
-          <Route path="/" element={(
+          <Route path={"/"} element={(
             <Home/>
+          )}/>
+          <Route path={"/posts"} element={(
+            <Home/>
+          )}/>
+          <Route path={"/posts/:id"} element={(
+            <PostAll/>
           )}/>
           <Route path="/new-post" element={(
             <Add/>
