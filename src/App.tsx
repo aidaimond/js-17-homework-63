@@ -6,6 +6,7 @@ import About from "./containers/About/About";
 import Home from "./containers/Home/Home";
 import Add from "./containers/Add/Add";
 import PostAll from "./containers/PostAll/PostAll";
+import EditPost from "./containers/EditPost/EditPost";
 
 function App() {
   return (
@@ -23,6 +24,9 @@ function App() {
           )}/>
           <Route path={"/posts/:id"} element={(
             <PostAll/>
+          )}/>
+          <Route path={"/posts/:id/edit"} element={(
+            <EditPost/>
           )}/>
           <Route path="/new-post" element={(
             <Add/>

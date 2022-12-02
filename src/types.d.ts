@@ -8,3 +8,8 @@ export interface Post {
 export interface PostsList {
   [id: string]: Post;
 }
+
+export interface PostFormType {
+  title: string;
+  description: string;
+}

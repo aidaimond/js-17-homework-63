@@ -7,7 +7,7 @@ interface Props {
 
 const ContactCard: React.FC<Props> = (props) => {
   return (
-    <div className="col m-5">
+    <div className="col p-4 m-2">
       <div className="card">
         <div className="card-body">
           <h5 className="card-title">{props.title}</h5>
